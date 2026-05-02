@@ -1,0 +1,22 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "mcp": {
+        "Context7": {
+            "type": "local",
+            "command": ["bunx", "-y", "@upstash/context7-mcp"],
+            "enabled": true
+        },
+        "jcodemunch": {
+            "command": [
+                "C:/Users/Kei/Documents/NonWork/jcodemunch-mcp/.venv/Scripts/jcodemunch-mcp.exe"
+            ],
+            "type": "local",
+            "enabled": true
+        },
+        "nu": {
+            "command": ["nu", "--mcp"],
+            "type": "local",
+            "enabled": true
+        }
+    }
+}
