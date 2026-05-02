@@ -1,0 +1,15 @@
+mcp_servers:
+    jcodemunch:
+        command: uvx
+        args:
+            - jcodemunch-mcp
+    nu-mcp:
+        command: nu
+        args:
+            - --mcp
+web:
+    backend: "exa"
+skills:
+    external_dirs:
+        - ~/.agents/skills
+        - ~/.claude/skills
