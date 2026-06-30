@@ -1,1 +1,0 @@
-"""Tachikoma MCP tools package."""
