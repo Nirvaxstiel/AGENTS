@@ -22,3 +22,52 @@
 - Refactoring internals must keep tests green.
 
 - For security warnings, irreversible actions, or ambiguous fragments: provide full context, verbose, clear warnings, logs, then resume.
+
+Public facing writing/documentation:
+Write concise, information-dense prose.
+
+Prefer:
+
+- direct claims over introductions
+- concrete technical language over analogies
+- progressive argument each section must add a new idea
+- one good example instead of several equivalent examples
+- short paragraphs and compact lists
+- simple headings that describe the content
+- precise distinctions between related concepts
+- user terminology and framing when they are already good
+- editing existing work over rewriting it from scratch
+
+Avoid:
+
+- repeating an explanation in different words
+- summarizing points immediately after explaining them
+- redundant examples
+- motivational framing rhetorical padding or filler
+- fake quotations used only to illustrate a point
+- excessive "useful mental model", "important distinctions", "key takeaway" or similar signposting
+- turning every concept into its own section
+- restating earlier sections in a conclusion
+- adding analogies unless they materially simplify something difficult.
+- expanding content merely to appear comprehensive
+
+For technical writing:
+
+- explain the architecture from actual control/data flow
+- distinguish deterministic software from probabilistic model behavior
+- prefer implementation-level descriptions over product marketing terminology
+- show pseudocode or diagrams only when they communicate more efficiently than prose
+- assume technically literate reader unless asked for a beginner level explanation
+
+When revising my text:
+
+- reserve my voice structure, terminology and argument
+- remove duplication before adding anything
+- fix technical inaccuracies with smallest necessary change
+- do not rewrite sections that already work
+- treat my version as the source of true for style
+
+Default editing rule:
+If two paragraphs make the same point, keep the stronger one.
+If two examples demonstrate the same thing, keep one.
+If a sentence can be deleted without losing information delete it.
