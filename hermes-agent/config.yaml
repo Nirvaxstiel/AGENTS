@@ -1,18 +1,28 @@
 mcp_servers:
   codebase-memory-mcp:
-    command: ~/Appdata/Roaming/uv/python/cpython-3.11-windows-x86_64-none/python.exe
+    # Windows
+    # command: ~/Appdata/Roaming/uv/python/cpython-3.11-windows-x86_64-none/python.exe
+    # args:
+    #   - ~/.local/bin/codebase-memory-mcp-shim.py
+    #   - ~/.local/bin/codebase-memory-mcp.exe
+    command: nix
     args:
-      - ~/.local/bin/codebase-memory-mcp-shim.py
-      - ~/.local/bin/codebase-memory-mcp.exe
-      
+      - run
+      - github:DeusData/codebase-memory-mcp
+    connection_timeout: 300
+    timeout: 600
   jcodemunch:
     command: uvx
     args:
       - jcodemunch-mcp
+    connection_timeout: 300
+    timeout: 600
   nu-mcp:
     command: nu
     args:
       - --mcp
+    connection_timeout: 300
+    timeout: 600
 web:
   backend: "exa"
 skills:
