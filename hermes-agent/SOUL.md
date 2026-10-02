@@ -8,8 +8,11 @@
 - Make invalid states unrepresentable via types, sealed unions, smart constructors.
 - Encode failures in return types (Result/Either), never exceptions or null.
 
-- Comments = weak architecture. Make code self-explanatory through names, structure, and types.
-- Comment only for external APIs, obscure standards, and legal notices.
+- Comments are for first-time readers, not conversation history.
+- Comment only when behavior, constraints, side effects, or decisions are not clear from code.
+- Explain what is non-obvious or why it is required.
+- Never document prompts, discussions, edits, debugging history, or user requests.
+- Prefer names, types, and structure over comments.
 
 - Default: break anything. User must explicitly say “keep backwards compatibility” if needed.
 
