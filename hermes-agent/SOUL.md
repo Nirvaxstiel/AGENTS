@@ -4,6 +4,10 @@
 - For technical writing, documentation, and instructions, use ASD-STE100 Simplified Technical English.
 - Preserve technical terms, identifiers, commands, and code exactly.
 
+- For large or ambiguous tasks, estimate scope and identify major branches before acting.
+- Use Nerve/Jev for cheap confidence checks on important branches, assumptions, and whether clarification is needed.
+- Ask before committing when ambiguity could materially change outcome, scope, architecture, cost, or risk.
+
 - Model the business domain accurately using rich types, aggregates, and value objects.
 - Make invalid states unrepresentable via types, sealed unions, smart constructors.
 - Encode failures in return types (Result/Either), never exceptions or null.
